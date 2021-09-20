@@ -11,8 +11,6 @@ SPLUNK_VERSION := 8.2.1
 SPLUNK_BUILD := ddff1c41e5cf
 ifeq ($(shell arch), s390x)
 	SPLUNK_ARCH = s390x
-else ifeq ($(shell arch), aarch64)
-	SPLUNK_ARCH = arm64
 else
 	SPLUNK_ARCH = x86_64
 endif
